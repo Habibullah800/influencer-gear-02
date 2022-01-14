@@ -35,6 +35,10 @@ h1{
 .product-title h3{
     font-size: 25px;
     font-weight: 500;
+    margin: 10px auto;
+}
+.product-title p{
+    margin: 5px auto;
 }
 .rating i{
     color: #FB8200;
@@ -44,4 +48,41 @@ h1{
     color: #787885;
     font-size: 14px;
     font-weight: 700;
+}
+.see-more{
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 23px 0px;
+    color: #E02C6D;
+}
+/*------------------------
+---------Footer-----------
+------------------------*/
+/* footer footer-icon{
+    height: 32px;
+    width: 32px;
+} */
+footer{
+    height: 190px;
+    background-color: #0A0826;
+    color: white;
+}
+footer div{
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+}
+.footer-information div h3{
+    margin-top: 35px;
+    font-weight: 500;
+}
+.footer-information div h5{
+    margin: 3px;
+    font-weight: 20;
+}
+.footer-icon span i{
+    padding: 8px;
 }
