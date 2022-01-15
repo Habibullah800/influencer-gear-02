@@ -86,7 +86,7 @@ nav {
 /*----------------------------
  -------logo-section---------- 
 ----------------------------*/
-.logo img{
+.logos img{
     padding:8px 30px;
     height: 31px;
     width: 55px;
@@ -94,7 +94,7 @@ nav {
 hr{
     width:80%
 }
-.logo span{
+.logos span{
     align-items: center;
     margin: 0% 15% 0% 16%;
 }
