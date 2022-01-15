@@ -5,7 +5,37 @@ body{
     margin: 0px;
     font-family: 'Poppins', sans-serif;
 }
-
+/*---------------------------
+--------Header-style---------
+--------------------------- */
+nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 350px;
+    align-items: baseline;
+    justify-items: center;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+.menu{
+    display: grid;
+    grid-template-columns: repeat(6, 75px);
+    font-size: 15px;
+    font-weight: 500;
+    width: 100%;
+}
+.Top-title{
+    font-size: 24px;
+    font-weight: 700;
+}
+.menu li{
+    list-style: none;
+    padding: 5px;
+    align-items: center;
+}
+/*---------------------------
+---------Section-01----------
+--------------------------- */
 .container-01{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -13,7 +43,6 @@ body{
     align-items: center;
     justify-items: center;
     margin-bottom: 100px;
-    
 }
 .influencer-title h1{
     font-size: 45px;
@@ -28,12 +57,16 @@ body{
 }
 .influencer-title{
     width: 80%;
-    padding-left: 90px;
     padding-right: 50px;
     margin-left: 90px;
 }
-.influencer-image{
+.influencer-images{
     background-image: url(images/Screenshot_42.png);
+    cursor: pointer;
+}
+.influencer-image:hover{
+    transform: scale(1.08);
+    transition: transform .5s ease-in; 
 }
 .influencer-image img{
     width: 440px;
@@ -50,9 +83,6 @@ body{
     font-weight: 700;
     cursor: pointer;
 }
-
-
-
 /*----------------------------
  -------logo-section---------- 
 ----------------------------*/
@@ -92,12 +122,10 @@ hr{
     border-radius: 7px;
     background-color: white;
 }
-.product-img{
-    overflow: hidden;
-}
 .product-img:hover {
-    transform: scale(1.1);
+    transform: scale(1.09);
     transition: transform 1s ease-in;
+    cursor: pointer;
 }
 .product-img img{
     width: 300px;
