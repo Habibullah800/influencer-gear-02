@@ -206,3 +206,25 @@ footer div{
 .footer-icon span i{
     padding: 8px;
 }
+@media (max-width: 700px) {
+    nav{
+        grid-template-columns: 1fr;
+        /* height: fit-content; */
+    }
+    .container-01{
+        grid-template-columns: 1fr;
+        height: fit-content;
+    }
+    .container-2{
+        grid-template-columns: 1fr;
+        height: fit-content;
+        align-items: center;
+    }
+    .influencers{
+        grid-template-columns: 1fr;
+        height: fit-content;
+    }
+    footer{
+        height:min-content;
+    }
+}
