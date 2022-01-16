@@ -203,7 +203,6 @@ footer div{
 -------------------------------------------- */
 @media only screen and (max-width: 768px) {
     body {
-        background-color: lemonchiffon;
         margin: auto;
       }
     nav{
@@ -228,7 +227,6 @@ footer div{
    .container-2{
     grid-template-columns: 1fr;
    }
-
    .products{
     width: 338px;
    margin-left: 10%;
@@ -258,4 +256,50 @@ footer div{
        margin-top: 8px;
        margin-bottom: 100px;
    }
+   footer{
+    width:768px;
+   } 
   }
+  /*-------------------------------------------
+------- Responsive For-------------Tab:-------
+-------------------------------------------- */
+  @media only screen and (max-width: 992px) and (min-width:769px) {
+    body{
+        background-color: lightyellow;
+        width: 600px;
+    }
+    nav{
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+    .menu{
+        margin-left: 100px;
+        justify-content: space-evenly;
+    }
+    .container-2{
+            grid-template-columns: 1fr 1fr;
+            width: 300px;
+     }
+     .products{
+        width: 338px;
+       margin-left: 10%;
+      
+       }
+       .responsive{
+        height: 3150px;
+       }
+       .see-more{
+        width: 800px;
+        margin-top: 8px;
+        margin-bottom: 100px;
+    }
+    footer{
+        width:990px;
+       } 
+       .product-img{
+        padding-left: 20px;
+        }
+  }
+   /*-------------------------------------------
+--------------------The-End---------------------
+-------------------------------------------- */
