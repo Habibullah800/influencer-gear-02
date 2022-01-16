@@ -4,6 +4,7 @@
 body{
     margin: 0px;
     font-family: 'Poppins', sans-serif;
+    width: 100%;
 }
 /*---------------------------
 --------Header-style---------
@@ -62,6 +63,7 @@ nav {
 .influencer-images{
     background-image: url(images/Screenshot_42.png);
     cursor: pointer;
+    border-radius: 20px;
 }
 .influencer-image:hover{
     transform: scale(1.08);
@@ -71,7 +73,7 @@ nav {
     width: 440px;
     height: 414px;
 }
-.influencer-title button{
+.button{
     background-color: #E02C6D;
     border: none;
     border-radius: 30px;
@@ -81,6 +83,9 @@ nav {
     font-size: 16px;
     font-weight: 700;
     cursor: pointer;
+}
+.button:hover{
+    background-color: #f31566;
 }
 hr{
     width:80%
@@ -147,40 +152,27 @@ hr{
 /*------------------------
 ---------Extra-----------
 ------------------------*/
-.extra{
-    width: 8oopx;
-    background-color: #FFFFFF;
-    border-radius: 3px;
-    margin: auto;
-    
-}
-.section-title{
-    color: black;
-    padding-top:33px;
-    padding-left: 29px ;
-    font-weight: 500;
-    font-size: 24px;
-    margin-top: 0px;
-}
-.influencers{
+.influencer-specialist{
+    margin: 50px 30px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    margin: 30px auto 0px 30px;
-    padding-bottom: 50px;
-}
-.influencer{
-    display: flex;
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    padding-bottom: 28px;
+    justify-items: center;
 }
-.influencer img{
-    width: 56px;
-    height: 56px;
-    border-radius: 5px;
+.specialist-pic img{
+    width: 404px;
+    height: 270px;
+    margin-left: 00px;
+    border-radius: 20px;
 }
-.influencer-name{
-    margin-left: 16px;
+.specialist-pic:hover {
+    transform: scale(1.07);
+    transition: transform .5s ease-in;
+    cursor: pointer;
+}
+.specialist-description{
+    margin: 40px;
+    padding-left: 40px;
 }
 /*------------------------
 ---------Footer-----------
@@ -206,25 +198,64 @@ footer div{
 .footer-icon span i{
     padding: 8px;
 }
-@media (max-width: 700px) {
+/*-------------------------------------------
+------- Responsive For mobile phones:-------
+-------------------------------------------- */
+@media only screen and (max-width: 768px) {
+    body {
+        background-color: lemonchiffon;
+        margin: auto;
+      }
     nav{
-        grid-template-columns: 1fr;
-        /* height: fit-content; */
-    }
-    .container-01{
-        grid-template-columns: 1fr;
-        height: fit-content;
-    }
-    .container-2{
-        grid-template-columns: 1fr;
-        height: fit-content;
-        align-items: center;
-    }
-    .influencers{
-        grid-template-columns: 1fr;
-        height: fit-content;
-    }
-    footer{
-        height:min-content;
-    }
-}
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+   }
+   .responsive{
+    height: 5540px;
+   }
+   .menu{
+       margin-left: 100px;
+       justify-content: space-evenly;
+   }
+   .influencer-title h1{
+       font-size:  2em;
+       padding-bottom: 30px;
+   }
+   .container-01{
+    grid-template-columns: 1fr;
+    grid-gap: 40px;
+   }
+   .container-2{
+    grid-template-columns: 1fr;
+   }
+
+   .products{
+    width: 338px;
+   margin-left: 10%;
+   }
+   .product-img{
+   padding-left: 20px;
+   }
+   .popular-collection h1{
+    margin-right:  450px;
+   }
+
+   .influencer-specialist{
+    grid-template-columns: 1fr;
+   }
+   .specialist-description{
+       width: 400px;
+       margin-left: 50px;
+   }
+   .button{
+    margin-left: 80px;
+   }
+   footer{
+    width:600px;
+   } 
+   .see-more{
+       width: 450px;
+       margin-top: 8px;
+       margin-bottom: 100px;
+   }
+  }
